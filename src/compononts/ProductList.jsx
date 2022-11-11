@@ -3,6 +3,7 @@ import Product from './Product';
 import Title from './Title';
 import { ProductConsumer } from '../Context';
 
+
 class ProductList extends Component {
      
     render() { 
@@ -16,7 +17,7 @@ class ProductList extends Component {
                     <ProductConsumer>
                         {(value)=>{
                             return value.products.map(product =>{
-                                return <Product key={product.id} product={product}/>
+                                return <Product key={product.id} product={product}/>      
                             })
                         }}
                     </ProductConsumer>
